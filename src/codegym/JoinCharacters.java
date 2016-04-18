@@ -5,9 +5,8 @@ package codegym;
  * slivets.aleksay@gmail.com
  * on 17.04.2016.
  */
-public class JoinCharacters {
-
-    public int join(char[] input) {
+class JoinCharacters {
+    int join(char[] input) {
         int CHAR_ZERO_INDEX = 48;
         int sum = 0;
         for (int i = 0; i < input.length; i++) {

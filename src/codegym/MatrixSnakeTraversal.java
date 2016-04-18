@@ -6,8 +6,8 @@ package codegym;
  * on 16.04.2016.
  */
 
-public class MatrixSnakeTraversal {
-    public int[] print(int[][] input) {
+class MatrixSnakeTraversal {
+    int[] print(int[][] input) {
         int[] snake = new int[input[0].length * input.length];
         for (int i = 0; i < input.length; i++) {
             for (int j = 0; j < input[0].length; j++) {
@@ -15,7 +15,7 @@ public class MatrixSnakeTraversal {
                 int oddRow = 2 * input.length - i - j;
                 if (j % 2 != 0) {
                     snake[oddRow] = input[i][j];
-                }else {
+                } else {
                     snake[evenRow] = input[i][j];
                 }
             }

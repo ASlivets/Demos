@@ -1,6 +1,6 @@
 package enums;
 
-public enum DaysOfWeek {
+enum DaysOfWeek {
     SUNDAY("Неділя"),
     MONDAY("Понеділок"),
     TUESDAY("Вівторок"),
@@ -10,11 +10,12 @@ public enum DaysOfWeek {
     SATURDAY("Субота");
 
     private String ukrName;
+
     DaysOfWeek(String dayName) {
         this.ukrName = dayName;
     }
 
-    public void printDay(){
+    public void printDay() {
         System.out.println(ukrName);
     }
 
